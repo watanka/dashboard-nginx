@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+pymysql
+mysqlclient
+alembic
+python-dotenv
+cryptography
