@@ -20,6 +20,11 @@ app.add_middleware(
     allow_headers = ['*']
 )
 
+@app.get('/ping')
+def pingpong() :
+    return {'ping' : 'pong'}
+
+
 app.include_router(question_router.router)
 app.include_router(answer_router.router)
 
